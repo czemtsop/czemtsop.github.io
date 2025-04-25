@@ -1,0 +1,163 @@
+[
+  {
+    "type": "work",
+    "activities": [
+      {
+        "title": "Business Intelligence Engineer",
+        "institution": "Kuelap Inc",
+        "location": "Seattle (Remote)",
+        "period": "September 2023 - Present",
+        "achievements": [
+          {
+            "text": "Reduced customer complaints by 90% within a month through data warehouse auditing",
+            "value": 90,
+            "unit": "percent"
+          },
+          {
+            "text": "Achieved 100% customer retention through efficient database design",
+            "value": 100,
+            "unit": "percent"
+          },
+          {
+            "text": "Cut report-building time in half by creating the organization's first data dictionary",
+            "value": 50,
+            "unit": "percent"
+          },
+          {
+            "text": "Saved over 10 hours of manual work per month through Python automation",
+            "value": 10,
+            "unit": "hours"
+          },
+          {
+            "text": "Accelerated report and dashboard rendering by 75% through query optimization",
+            "value": 75,
+            "unit": "percent"
+          }
+        ],
+        "skills": ["Python", "Data Warehousing", "BI Tools", "OLAP"]
+      },
+      {
+        "title": "Business Intelligence Analyst",
+        "institution": "Kuelap Africa SASU",
+        "location": "Yaoundé, Cameroon",
+        "period": "September 2022 - August 2023",
+        "achievements": [
+          {
+            "text": "Increased customer growth by 50% within a year through improved transaction visibility",
+            "value": 50,
+            "unit": "percent"
+          },
+          {
+            "text": "Achieved 100% customer retention through compliance-focused financial reporting",
+            "value": 100,
+            "unit": "percent"
+          }
+        ],
+        "skills": ["Metabase BI", "Yellowfin BI", "Financial Reporting"]
+      },
+      {
+        "title": "Service Delivery Specialist",
+        "institution": "Kuelap Africa SASU",
+        "location": "Yaoundé, Cameroon",
+        "period": "October 2021 - August 2022",
+        "achievements": [
+          {
+            "text": "Cleaned and migrated data for ten microfinance institutions using Python and spreadsheets",
+            "value": 10,
+            "unit": "institutions"
+          }
+        ],
+        "skills": ["Python", "Data Cleaning", "Data Migration", "Client Support"]
+      },
+      {
+        "title": "Software Engineer",
+        "institution": "NASLA Cameroon",
+        "location": "Buea, Cameroon",
+        "period": "March 2021 - August 2021",
+        "achievements": [
+          {
+            "text": "Designed and deployed NASLA's bilingual website and e-learning platform",
+            "value": null,
+            "unit": null
+          }
+        ],
+        "skills": ["Web Development", "E-learning Platforms", "IT Consulting"]
+      },
+      {
+        "title": "Service Delivery Management Consultant",
+        "institution": "Indra Sistemas",
+        "location": "Douala, Cameroon",
+        "period": "January 2017 - August 2019",
+        "achievements": [
+          {
+            "text": "Managed customer management system supporting over 1 million customers",
+            "value": 1000000,
+            "unit": "customers"
+          }
+        ],
+        "skills": ["SLA Management", "Business Process Analysis", "Software Requirements"]
+      },
+      {
+        "title": "IT Solutions Integrator",
+        "institution": "Eneo Cameroon",
+        "location": "Koumassi, Douala",
+        "period": "June 2015 - December 2016",
+        "achievements": [
+          {
+            "text": "Reduced asset attribution time by half through web app development",
+            "value": 50,
+            "unit": "percent"
+          }
+        ],
+        "skills": ["Web Development", "SharePoint", "PowerBI", "Process Automation"]
+      },
+      {
+        "title": "Client Account Service and Electronic Banking Support",
+        "institution": "Citibank Cameroon",
+        "location": "Douala",
+        "period": "October 2014 - January 2015",
+        "achievements": [
+          {
+            "text": "Automated daily Excel reports using VBA",
+            "value": null,
+            "unit": null
+          }
+        ],
+        "skills": ["Customer Support", "VBA", "Excel", "Online Banking"]
+      }
+    ]
+  },
+  {
+    "type": "school",
+    "activities": [
+      {
+        "title": "Faculty Students' Association Treasurer",
+        "institution": "University of Buea",
+        "location": "Buea, Cameroon",
+        "period": "October 2010 - December 2014",
+        "achievements": [
+          {
+            "text": "Cleaned and migrated data for ten microfinance institutions using Python and spreadsheets",
+            "value": 10,
+            "unit": "institutions"
+          }
+        ],
+        "skills": ["HTML5", "CSS3", "php", "Shell Scripting"]
+      },
+      {
+        "title": "Class Academic Representative",
+        "institution": "Cardiff University",
+        "location": "Cardiff, Wales",
+        "period": "September 2019 - March 2021",
+        "achievements": [
+          {
+            "text": "Used Simul8® to simulate and analyse a bank’s queuing system and make recommendations for optimisation.",
+            "value": 2,
+            "unit": "hours"
+          }
+        ],
+        "skills": ["R", "SAS", "Python", "Simul8"]
+      }
+    ]
+  }
+]

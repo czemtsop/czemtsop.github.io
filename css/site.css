@@ -1,0 +1,84 @@
+body {
+    background: color-mix(in oklab, #212529 80%, #030332 20%);
+    font-family: "Delius", cursive;
+}
+
+.main-nav {
+    background-color: #322769;
+}
+
+/* About Me section */
+.about-me {
+    background-color: #030332;
+    color: #fff;
+}
+aside {
+    padding-top: 55px;
+}
+
+@media (min-width: 576px) {
+    aside {
+        position:fixed;
+    }
+    .carousel-caption{
+        bottom: 40%;
+    }
+}
+
+aside .card-title {
+    font-family: "Borel", cursive;
+}
+
+aside a.card-link {
+    color: #fff;
+}
+
+main {
+    padding-left: 0;
+}
+
+/* Carousel */
+.carousel .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+}
+
+.hero-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+
+.carousel-caption{
+    font-size: 2rem;
+    bottom: 30%;
+}
+
+.hero-caption {
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+/******************/
+    /* GENERAL */
+/******************/
+.section-header{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family: "Almendra SC", serif;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+#skills {
+    text-align: center;
+}
+#skills .card-title {
+    font-size: 6rem;
+}
+.progress {
+    height: 1.5rem;
+}
