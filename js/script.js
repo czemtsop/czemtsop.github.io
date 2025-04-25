@@ -1,33 +1,30 @@
+console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55');
+
+/* ---------------------------------------------- /*
+ * Preloader
+ /* ---------------------------------------------- */
 (function(){
     $(document).ready(function() {
-        var grid   = $('#project-grid'),
-            grid_mode,
-            width       = Math.max($(window).width(), window.innerWidth);
-
         /* ---------------------------------------------- /*
          * Portfolio
          /* ---------------------------------------------- */
 
-        if (grid.hasClass('masonry')) {
-            grid_mode = 'masonry';
-        } else {
-            grid_mode = 'fitRows';
-        }
+        let worksgrid   = $('#project-grid'),
+            worksgrid_mode = 'masonry';
 
-        grid.imagesLoaded(function() {
-            grid.isotope({
-                // options
-                layoutMode: grid_mode,
+        worksgrid.imagesLoaded(function() {
+            worksgrid.isotope({
+                layoutMode: worksgrid_mode,
                 itemSelector: '.grid-item'
             });
         });
 
-        $('#filters button').click(function() {
-            $('#filters .current').removeClass('current');
-            $(this).addClass('current');
+        $('#filters a').click(function() {
+            $('#filters .active').removeClass('active');
+            $(this).addClass('active');
             var selector = $(this).attr('data-filter');
 
-            grid.isotope({
+            worksgrid.isotope({
                 filter: selector,
                 animationOptions: {
                     duration: 750,
@@ -35,6 +32,7 @@
                     queue: false
                 }
             });
+
             return false;
         });
 
