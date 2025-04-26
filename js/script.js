@@ -1,3 +1,4 @@
+
 (function(){
     $(document).ready(function() {
         /* ---------------------------------------------- /*
@@ -37,7 +38,6 @@
 
         $.getJSON('js/career.json',function(data){
             console.log('success');
-            console.log(data);
 
             // Parse dates
             const parseTime = d3.timeParse("%B %Y");
@@ -46,11 +46,16 @@
                 d.endDate = d.end === "Present" ? new Date() : parseTime(d.end);
             });
 
+            data.forEach(d => {
+                d.highlights = d.achievements.reduce((html, achievement) => html + `<li>${achievement}</li>`, "");
+            });
+
 
             // Declare the chart dimensions and margins.
-            const margin = ({top: 20, right: 50, bottom: 50, left: 50});
-            const width = $('#resume').width() - margin.left - margin.right;
-            const height = $('#resume').height() - margin.top - margin.bottom;
+            const margin = ({top: 20, right: 50, bottom: 50, left: 10});
+            const resume = $('#resume');
+            const width = resume.width() - margin.left - margin.right;
+            const height = resume.height() - margin.top - margin.bottom;
 
 
             // Create SVG
@@ -95,11 +100,24 @@
             svg.selectAll(".label")
                 .data(data)
                 .enter()
-                .append("text")
+                .append("g")
                 .attr("class", "label")
-                .attr("x", d => x(d.startDate) + 5)
+                .append("image")
+                .attr("href", d => 'images/logo/'+d.logo)
+                .attr("x", d => x(d.startDate))
                 .attr("y", d => y(d.institution) + y.bandwidth() / 4)
-                .attr("dy", ".35em")
+                .attr("width", 20)
+                .attr("height", 20);
+
+            // Add labels
+            svg.selectAll(".label")
+                .append("text")
+                .append("tspan")
+                .attr("class", "title")
+                .attr("x", d => x(d.startDate) + 28)
+                .attr("y", d => y(d.institution) + y.bandwidth() / 2)
+                .attr("dy", ".25em")
+                .attr("textLength", "16em")
                 .text(d => d.title);
 
             // Add tooltips
@@ -108,27 +126,26 @@
                 .style("position", "absolute")
                 .style("pointer-events", "none")
                 .style("top", 0)
-                .style("opacity", 0)
-                .style("background", "white")
-                .style("border-radius", "5px")
-                .style("padding", "10px")
-                .style("box-shadow", "0 0 10px rgba(0,0,0,.25)")
-                .style("line-height", "1.3")
-                .style("border", "solid")
-                .style("border-width", "1px");
+                .style("opacity", 0);
 
             svg.selectAll("rect")
                 .on("mouseover", function(event, d) {
                     tooltip.transition()
                         .duration(300)
                         .style("opacity", .9);
-                    tooltip.html(`${d.title}<br/>${d.institution}<br/>${d.start}`)
-                        .style("left", (event.pageX) + "px")
-                        .style("top", (event.pageY - 28) + "px");
+                    tooltip.html(`
+<h5>${d.title}</h5>
+<i class="fa-solid fa-location-dot"></i><a href="${d.site}" target="_blank"> ${d.institution} [${d.location}]</a><br/>
+<i class="fa-solid fa-calendar-week"></i> ${d.start} - ${d.end}<br/>
+<i class="fa-solid fa-screwdriver-wrench"></i> <span class="fw-semibold">Skills Developed: </span>${d.skills.join(', ')}<br/>
+<i class="fa-solid fa-thumbtack"></i><span class="fw-bold"> Highlights</span>
+<ul>${d.highlights}</ul>`)
+                        .style("left", (event.pageX - 20) + "px")
+                        .style("top", (event.pageY - 68) + "px");
                 })
                 .on("mouseout", function(d) {
                     tooltip.transition()
-                        .duration(500)
+                        .duration(600)
                         .style("opacity", 0);
                 });
         });
