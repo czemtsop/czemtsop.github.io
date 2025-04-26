@@ -1,8 +1,3 @@
-console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55');
-
-/* ---------------------------------------------- /*
- * Preloader
- /* ---------------------------------------------- */
 (function(){
     $(document).ready(function() {
         /* ---------------------------------------------- /*
@@ -42,28 +37,20 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
 
         $.getJSON('js/career.json',function(data){
             console.log('success');
-
-            // Flatten the data structure
-            const flattenedData = data.flatMap(category =>
-                category.activities.map(activity => ({
-                    ...activity,
-                    type: category.type
-                }))
-            );
+            console.log(data);
 
             // Parse dates
             const parseTime = d3.timeParse("%B %Y");
-            flattenedData.forEach(d => {
-                const dates = d.period.split(" - ");
-                d.startDate = parseTime(dates[0]);
-                d.endDate = dates[1] === "Present" ? new Date() : parseTime(dates[1]);
+            data.forEach(d => {
+                d.startDate = parseTime(d.start);
+                d.endDate = d.end === "Present" ? new Date() : parseTime(d.end);
             });
 
 
             // Declare the chart dimensions and margins.
             const margin = ({top: 20, right: 50, bottom: 50, left: 50});
-            const width = Math.max($(window).width(), window.innerWidth) - margin.left - margin.right;
-            const height = 450 - margin.top - margin.bottom;
+            const width = $('#resume').width() - margin.left - margin.right;
+            const height = $('#resume').height() - margin.top - margin.bottom;
 
 
             // Create SVG
@@ -76,17 +63,17 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
 
             // Create scales
             const x = d3.scaleTime()
-                .domain(d3.extent(flattenedData.flatMap(d => [d.startDate, d.endDate])))
+                .domain(d3.extent(data.flatMap(d => [d.startDate, d.endDate])))
                 .range([0, width]);
 
             const y = d3.scaleBand()
-                .domain(flattenedData.map(d => d.institution))
+                .domain(data.map(d => d.institution))
                 .range([0, height])
                 .padding(0.1);
 
             const color = d3.scaleOrdinal()
-                .domain(["work", "school"])
-                .range(["steelblue", "orange"]);
+                .domain(["work", "school", "certification"])
+                .range(["steelblue", "orange", "green"]);
 
             // Add X axis
             svg.append("g")
@@ -95,7 +82,7 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
 
             // Add rectangles
             svg.selectAll("rect")
-                .data(flattenedData)
+                .data(data)
                 .enter()
                 .append("rect")
                 .attr("x", d => x(d.startDate))
@@ -106,16 +93,14 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
 
             // Add labels
             svg.selectAll(".label")
-                .data(flattenedData)
+                .data(data)
                 .enter()
                 .append("text")
                 .attr("class", "label")
                 .attr("x", d => x(d.startDate) + 5)
-                .attr("y", d => y(d.institution) + y.bandwidth() / 2)
+                .attr("y", d => y(d.institution) + y.bandwidth() / 4)
                 .attr("dy", ".35em")
-                .text(d => d.title)
-                .attr("fill", "black")
-                .attr("font-size", "14px");
+                .text(d => d.title);
 
             // Add tooltips
             const tooltip = d3.select("body").append("div")
@@ -137,7 +122,7 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
                     tooltip.transition()
                         .duration(300)
                         .style("opacity", .9);
-                    tooltip.html(`${d.title}<br/>${d.institution}<br/>${d.period}`)
+                    tooltip.html(`${d.title}<br/>${d.institution}<br/>${d.start}`)
                         .style("left", (event.pageX) + "px")
                         .style("top", (event.pageY - 28) + "px");
                 })

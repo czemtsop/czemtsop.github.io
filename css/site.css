@@ -53,6 +53,21 @@ main {
     font-size: 4rem;
     margin-bottom: 4rem;
 }
+/********************/
+    /* RESUME */
+/********************/
+
+#resume {
+    min-height: 80%;
+}
+
+#resume svg {
+    background: #fff;
+}
+
+svg text.label {
+    fill: #000;
+}
 
 /*****************/
   /* PORTFOLIO */
@@ -200,7 +215,8 @@ main {
 }
 
 #skills .card-title i {
-    font-size: 6rem;
+    font-size: 7rem;
+    color: darkslateblue;
 }
 
 .progress {
@@ -212,6 +228,11 @@ main {
         font-size: 14px;
         margin: 0 0 10px 0;
     }
+
+    svg text.label {
+        fill: #000;
+        font-size: 10px;
+    }
 }
 
 @media (min-width: 576px) {
@@ -222,9 +243,13 @@ main {
     .carousel-caption{
         bottom: 40%;
     }
-    }
+}
 @media (min-width: 768px) {
     #skills {
         margin-bottom: 8rem;
+    }
+
+    svg text.label {
+        font-size: 1rem;
     }
 }
