@@ -1,3 +1,3 @@
 # Gitbub Webpage
 
-This contains files for my custome github mini-website
+This contains files for my custom github mini-website
