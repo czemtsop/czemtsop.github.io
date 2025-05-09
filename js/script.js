@@ -41,7 +41,7 @@
             const parseTime = d3.timeParse("%B %Y");
             data.forEach(d => {
                 d.startDate = parseTime(d.start);
-                d.endDate = d.end === "Present" ? new Date() : parseTime(d.end);
+                d.endDate = d.end === "Present" ? new Date() : parseTime(d.end).setMonth(parseTime(d.end).getMonth() + 1);
             });
 
             data.forEach(d => {
