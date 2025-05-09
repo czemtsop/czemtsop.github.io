@@ -7,6 +7,13 @@ body {
     background-color: #322769;
 }
 
+#navbarToggler a:hover, #filters a:hover,
+#navbarToggler a.active, #filters a.active {
+    color: #FFF;
+    background-color: #322769;
+    border-color: #322769;
+}
+
 /* About Me section */
 .about-me {
     background-color: #030332;
@@ -65,18 +72,24 @@ main {
     overflow: auto;
     fill: #000;
 }
-.tooltip {
-    background: #fff;
-    border-radius: 5px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,.25);
-    line-height: 1.3;
-    border: 1px solid;
-}
 
 .tooltip h5 {
     font-size: 1rem;
     text-align: center;
+}
+.tooltip.custom-tooltip{
+    max-width: 800px;
+    border: 1px solid;
+    border-radius: 5px;
+    border-left: 5px solid darkmagenta;
+    box-shadow: 0 0 10px rgba(0,0,0,.25);
+    line-height: 1.3;
+}
+.tooltip-inner{
+    padding: 5px;
+    background: #fff;
+    color: black;
+    text-align: left;
 }
 
 /*****************/
@@ -97,13 +110,6 @@ main {
     margin-bottom: 5px;
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
-}
-
-#filters a:hover,
-#filters a.active {
-    color: #FFF;
-    background-color: #322769;
-    border-color: #322769;
 }
 
 #filters a:first-child {
@@ -211,12 +217,25 @@ main {
 /******************/
   /* GENERAL */
 /******************/
-.section-header{
-    font-size: 3rem;
-    font-weight: 700;
+.section-header-container {
+    position: relative;
     font-family: "Almendra SC", serif;
     text-align: center;
-    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #777;
+    margin-bottom: 4rem;
+}
+.section-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-overlay {
+    z-index: 9;
+    margin: 15px 5px;
+    font-weight: 700;
     color: #fff;
 }
 
@@ -262,9 +281,9 @@ main {
 }
 
 @media (min-width: 768px) {
-    #skills {
+   /* #skills {
         margin-bottom: 8rem;
-    }
+    }*/
 
     .hero-caption {
         font-size: 4rem;
