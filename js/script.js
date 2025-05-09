@@ -128,50 +128,19 @@
                 .attr("textLength", "16em")
                 .text(d => d.title);
 
-            /* Add tooltips
-            const tooltip = d3.select("#resume").append("div")
-                .attr("class", "tooltip")
-                .style("position", "absolute")
-                .style("pointer-events", "none")
-                .style("top", 0)
-                .style("opacity", 0);
-
-            svg.selectAll("rect")
-                .on("mouseover", function (event, d) {
-                    tooltip.transition()
-                        .duration(300)
-                        .style("opacity", .9);
-                    tooltip.html(`
-<h5>${d.title}</h5>
-<i class="fa-solid fa-location-dot"></i><a href="${d.site}" target="_blank"> ${d.institution} [${d.location}]</a><br/>
-<i class="fa-solid fa-calendar-week"></i> ${d.start} - ${d.end}<br/>
-<i class="fa-solid fa-screwdriver-wrench"></i> <span class="fw-semibold">Skills Developed: </span>${d.skills.join(', ')}<br/>
-<i class="fa-solid fa-thumbtack"></i><span class="fw-bold"> Highlights</span>
-<ul>${d.highlights}</ul>`)
-                        .style("left", (event.pageX - 20) + "px")
-                        .style("top", (event.pageY - 68) + "px");
-                })
-                .on("mouseout", function (d) {
-                    tooltip.transition()
-                        .duration(3000)
-                        .style("opacity", 0);
-                });
-*/
-
-            var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"], svg g.label'))
+            let tooltipTriggerList = [].slice.call($('[data-bs-toggle="tooltip"], svg g.label'));
             console.log(tooltipTriggerList);
 
-            var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
                 const tooltip = new bootstrap.Tooltip(tooltipTriggerEl, {
                     trigger: "manual",
-                    html: true,
                     'customClass': 'custom-tooltip'
                 })
 
-                let tooltipElTimeout;
-                let currentToolTip;
-
-                let currentTooltipTimeout;
+                let isHidden = true,
+                    tooltipElTimeout,
+                    currentToolTip,
+                    currentTooltipTimeout;
 
                 tooltipTriggerEl.addEventListener("mouseenter", function () {
                     let toolTipID;
@@ -181,7 +150,10 @@
                     clearTimeout(currentTooltipTimeout);
 
                     // Show Tooltip
-                    tooltip.show();
+                    if (isHidden) {
+                        tooltip.show();
+                        isHidden = false;
+                    }
 
                     // Assign current tooltip ID to toolTipID variable
                     //nima aria-describedby
@@ -192,37 +164,37 @@
                     // Assign current tooltip to currentToolTip variable
                     currentToolTip = document.querySelector(`#${toolTipID}`);
 
-                    // Hide tooltip on tooltip mouse leave
-
                     currentToolTip.addEventListener("mouseleave", function () {
-                        //currentTooltipTimeout = setTimeout(()=>{
                         setTimeout(() => {
                             console.log("currentToolTip doesn't match :hover: " + !currentToolTip.matches(":hover"));
                             if (!tooltipTriggerEl.matches(":hover")) {
                                 console.log("tooltipTriggerEl matches :hover: " + tooltipTriggerEl.matches(":hover"));
                                 if (!currentToolTip.matches(":hover")) {
                                     tooltip.hide();
+                                    isHidden = true;
                                 }
                             }
                         }, 300)
-                        //}, 100)
                     });
                 });
 
-
+                // Hide tooltip on tooltip mouse leave
                 tooltipTriggerEl.addEventListener("mouseleave", function () {
-                    // SetTimeout before tooltip disappears
-                    tooltipTimeout = setTimeout(function () {
-                        // Hide tooltip if not hovered.
-                        if (!currentToolTip.matches(":hover")) {
-                            tooltip.hide();
+                    setTimeout(() => {
+                        console.log("currentToolTip doesn't match :hover: " + !currentToolTip.matches(":hover"));
+                        if (!tooltipTriggerEl.matches(":hover")) {
+                            console.log("tooltipTriggerEl matches :hover: " + tooltipTriggerEl.matches(":hover"));
+                            if (!currentToolTip.matches(":hover")) {
+                                tooltip.hide();
+                                isHidden = true;
+                            }
                         }
-                    }, 100);
+                    }, 300)
                 });
 
                 return tooltip;
 
-            })
+            });
 
         });
     });
