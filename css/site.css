@@ -1,3 +1,6 @@
+/********************
+        GENERAL
+********************/
 body {
     background: color-mix(in oklab, #212529 80%, #030332 20%);
     font-family: "Delius", cursive;
@@ -14,7 +17,49 @@ body {
     border-color: #322769;
 }
 
-/* About Me section */
+main {
+    padding-left: 0;
+}
+
+.section-header-container {
+    position: relative;
+    font-family: "Almendra SC", serif;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    color: #777;
+    margin-bottom: 4rem;
+}
+
+.section-header{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.header-overlay {
+    z-index: 9;
+    margin: 8px 2px;
+    font-weight: 700;
+    color: #fff;
+}
+
+#skills {
+    text-align: center;
+}
+
+#skills .card-title i {
+    font-size: 7rem;
+    color: darkslateblue;
+}
+
+.progress {
+    height: 1.5rem;
+}
+
+/*********************
+       ABOUT ME
+/********************/
 .about-me {
     background-color: #030332;
     color: #fff;
@@ -22,6 +67,10 @@ body {
 
 aside {
     padding-top: 55px;
+}
+
+aside .card {
+    border-radius: 10px;
 }
 
 aside .card-title {
@@ -32,15 +81,13 @@ aside a.card-link {
     color: #fff;
 }
 
-main {
-    padding-left: 0;
-}
-
-/* Carousel */
+/*********************
+        HERO
+**********************/
 .carousel .carousel-indicators button {
     width: 10px;
     height: 10px;
-    border-radius: 100%;
+    border-radius: 75%;
 }
 
 .hero-image {
@@ -55,10 +102,9 @@ main {
     font-size: 2rem;
 }
 
-/********************/
-    /* RESUME */
-/********************/
-
+/*********************
+        JOURNEY
+**********************/
 #resume {
     min-height: 80%;
 }
@@ -77,6 +123,7 @@ main {
     font-size: 1rem;
     text-align: center;
 }
+
 .tooltip.custom-tooltip{
     border: 1px solid;
     border-radius: 5px;
@@ -84,6 +131,7 @@ main {
     box-shadow: 0 0 10px rgba(0,0,0,.25);
     line-height: 1.3;
 }
+
 .tooltip-inner{
     max-width: 1000px;
     padding: 5px;
@@ -92,8 +140,8 @@ main {
     text-align: left;
 }
 
-/*****************/
-  /* PORTFOLIO */
+/******************
+     PORTFOLIO
 /*****************/
 #filters {
     padding: 0;
@@ -213,44 +261,9 @@ main {
     width: 100%;
 }
 
-
-/******************/
-  /* GENERAL */
-/******************/
-.section-header-container {
-    position: relative;
-    font-family: "Almendra SC", serif;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: 600;
-    color: #777;
-    margin-bottom: 4rem;
-}
-.section-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.header-overlay {
-    z-index: 9;
-    margin: 15px 5px;
-    font-weight: 700;
-    color: #fff;
-}
-
-#skills {
-    text-align: center;
-}
-
-#skills .card-title i {
-    font-size: 7rem;
-    color: darkslateblue;
-}
-
-.progress {
-    height: 1.5rem;
-}
+/******************
+        MEDIA
+/*****************/
 
 @media (max-width: 575px) {
     #filters a {
@@ -267,6 +280,10 @@ main {
 @media (min-width: 576px) {
     aside {
         position:fixed;
+    }
+
+    #skills {
+        height: 100vh;
     }
 }
 
