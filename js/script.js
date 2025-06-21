@@ -129,7 +129,6 @@
                 .text(d => d.title);
 
             let tooltipTriggerList = [].slice.call($('[data-bs-toggle="tooltip"], svg g.label'));
-            console.log(tooltipTriggerList);
 
             let tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
                 const tooltip = new bootstrap.Tooltip(tooltipTriggerEl, {
