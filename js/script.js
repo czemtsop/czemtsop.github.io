@@ -76,7 +76,7 @@
 
             const color = d3.scaleOrdinal()
                 .domain(["work", "school", "certification"])
-                .range(["orange", "steelblue", "green"]);
+                .range(["mediumpurple", "darkseagreen", "navajowhite"]);
 
             // Add X axis
             svg.append("g")

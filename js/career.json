@@ -1,5 +1,17 @@
 [
   {
+    "type": "certification",
+    "title": "Certified Analytics Professional (CAP) Expert",
+    "institution": "INFORMS",
+    "logo": "informs.png",
+    "site": "https://www.informs.org/About-INFORMS",
+    "location": "Catonsville, USA",
+    "start": "March 2025",
+    "end": "Present",
+    "skills": ["Analytics", "Critical thinking", "Statistics"],
+    "achievements": ["The CAP certification is a trusted, independent verification of the critical technical expertise and related soft skills possessed by accomplished analytics and data science professionals."]
+  },
+  {
     "type": "work",
     "title": "Customer service representative",
     "institution": "Foundever",
@@ -12,49 +24,23 @@
     "achievements": ["Promoted customer retention through timely and effectively attending to their concerns"]
   },
   {
-    "type": "certification",
-    "title": "Certified Analytics Professional (CAP)",
-    "institution": "INFORMS",
-    "logo": "informs.png",
-    "site": "https://www.informs.org/About-INFORMS",
-    "location": "Catonsville, USA",
-    "start": "March 2025",
-    "end": "Present",
-    "skills": ["Analytics", "Critical thinking", "Statistics"],
-    "achievements": ["The CAP certification is a trusted, independent verification of the critical technical expertise and related soft skills possessed by accomplished analytics and data science professionals."]
-  },
-  {
     "type": "work",
     "title": "Business Intelligence Engineer",
     "institution": "Kuelap Inc",
     "logo": "kuelap.png",
     "site": "https://www.kuelap.id/",
     "location": "Seattle, USA",
-    "start": "September 2023",
+    "start": "September 2022",
     "end": "September 2024",
-    "skills": ["Python", "Data Warehousing", "BI Tools", "OLAP"],
+    "skills": ["Python", "Data Warehousing", "BI Tools", "OLAP","Metabase BI", "Yellowfin BI", "Financial Reporting"],
     "achievements": [
-      "Reduced customer complaints by 90% within a month through data warehouse auditing",
-      "Achieved 100% customer retention through efficient database design",
+      "Reduced customer complaints by 90% within a month through insights from data warehouse auditing",
+      "Achieved 100% customer retention through efficient database design for transaction visibility",
       "Cut report-building time in half by creating the organization's first data dictionary",
       "Saved over 10 hours of manual work per month through Python automation",
-      "Accelerated report and dashboard rendering by 75% through query optimization"
-    ]
-  },
-  {
-    "type": "work",
-    "title": "Business Intelligence Analyst",
-    "institution": "Kuelap Africa SASU ",
-    "logo": "kuelap.png",
-    "site": "https://www.kuelap.id/",
-    "location": "Yaoundé, Cameroon",
-    "start": "September 2022",
-    "end": "August 2023",
-    "achievements": [
-      "Increased customer growth by 50% within a year through improved transaction visibility",
+      "Accelerated report and dashboard rendering by 75% through SQL query optimization",
       "Achieved 100% customer retention through compliance-focused financial reporting"
-    ],
-    "skills": ["Metabase BI", "Yellowfin BI", "Financial Reporting"]
+    ]
   },
   {
     "type": "work",
@@ -66,11 +52,14 @@
     "start": "October 2021",
     "end": "August 2022",
     "skills": ["Python", "Data Cleaning", "Data Migration", "Client Support"],
-    "achievements": ["Cleaned and migrated data for ten microfinance institutions using Python and spreadsheets"]
+    "achievements": [
+      "Cleaned and migrated data for ten microfinance institutions using Python and spreadsheets",
+      "Streamlined deployment and customer onboarding processes by 30% by addressing data integrity gaps."
+    ]
   },
   {
     "type": "work",
-    "title": "Software Engineer",
+    "title": "Software Analyst",
     "institution": "NASLA Cameroon",
     "logo": "nasla.jpeg",
     "site": "https://nasla.cm",
@@ -94,7 +83,7 @@
   },
   {
     "type": "work",
-    "title": "Service Delivery Consultant",
+    "title": "Digital Product Management Analyst",
     "institution": "Indra Sistemas",
     "logo": "indra.jpg",
     "site": "https://www.indracompany.com/",
@@ -106,7 +95,7 @@
   },
   {
     "type": "work",
-    "title": "IT Solutions Integrator",
+    "title": "Digital Solutions Architect",
     "institution": "Eneo Cameroon",
     "logo": "eneo.png",
     "site": "https://eneocameroon.cm",
@@ -118,7 +107,7 @@
   },
   {
     "type": "work",
-    "title": "Electronic Banking Support",
+    "title": "Digital Banking Support Specialist",
     "institution": "Citibank Cameroon",
     "logo": "citi.jpg",
     "site": "https://www.citigroup.com/global/about-us/global-presence/cameroon",
