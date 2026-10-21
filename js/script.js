@@ -157,17 +157,13 @@
                     // Assign current tooltip ID to toolTipID variable
                     //nima aria-describedby
                     toolTipID = tooltipTriggerEl.getAttribute("aria-describedby");
-                    console.log("tooltipTriggerEl: " + tooltipTriggerEl);
-                    console.log("toolTipID: " + toolTipID);
 
                     // Assign current tooltip to currentToolTip variable
                     currentToolTip = document.querySelector(`#${toolTipID}`);
 
                     currentToolTip.addEventListener("mouseleave", function () {
                         setTimeout(() => {
-                            console.log("currentToolTip doesn't match :hover: " + !currentToolTip.matches(":hover"));
                             if (!tooltipTriggerEl.matches(":hover")) {
-                                console.log("tooltipTriggerEl matches :hover: " + tooltipTriggerEl.matches(":hover"));
                                 if (!currentToolTip.matches(":hover")) {
                                     tooltip.hide();
                                     isHidden = true;
@@ -180,9 +176,7 @@
                 // Hide tooltip on tooltip mouse leave
                 tooltipTriggerEl.addEventListener("mouseleave", function () {
                     setTimeout(() => {
-                        console.log("currentToolTip doesn't match :hover: " + !currentToolTip.matches(":hover"));
                         if (!tooltipTriggerEl.matches(":hover")) {
-                            console.log("tooltipTriggerEl matches :hover: " + tooltipTriggerEl.matches(":hover"));
                             if (!currentToolTip.matches(":hover")) {
                                 tooltip.hide();
                                 isHidden = true;
