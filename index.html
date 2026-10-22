@@ -28,9 +28,10 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
         <nav class="nav nav-pills nav-justified">
-          <a class="nav-link" href="#cv">Journey</a>
-          <a class="nav-link" href="#skills">Skills</a>
-          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#cv" data-i18n="nav.journey">Journey</a>
+          <a class="nav-link" href="#skills" data-i18n="nav.skills">Skills</a>
+          <a class="nav-link" href="#projects" data-i18n="nav.projects">Projects</a>
+          <button id="lang-toggle" class="btn btn-outline-light btn-sm ms-lg-3 my-2 my-lg-0 align-self-center" type="button" lang="fr" aria-label="Afficher le site en français">FR</button>
           <!--a class="nav-item dropdown">
             <button class="btn btn-link nav-link px-0 px-lg-2 py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static" aria-label="Toggle theme (dark)">
               <svg class="bi my-1 theme-icon-active" aria-hidden="true"><use href="#moon-stars-fill"></use></svg>
@@ -59,16 +60,16 @@
       <!-- Sidebar -->
       <aside id="about" class="col-sm-6 col-md-4 col-lg-2 main-nav">
         <div class="card text-bg-dark border-dark mb-3">
-          <h2 class="card-header text-center">About me</h2>
+          <h2 class="card-header text-center" data-i18n="about.title">About me</h2>
           <img src="images/profile.jpg" class="card-img-top rounded-circle" alt="NCZ's headshot">
           <div class="card-body">
             <h5 class="card-title text-center">Zemtsop N. Carine, CAP</h5>
-            <h6 class="card-subtitle text-center my-2">Business Intelligence Analyst</h6>
+            <h6 class="card-subtitle text-center my-2" data-i18n="about.role">Business Intelligence Analyst</h6>
             <p class="my-4"></p>
             <ul class="list-group">
               <li class="list-group-item"><i class="fa-solid fa-language"></i> English / Fran&ccedil;ais</li>
               <li class="list-group-item"><i class="fa-solid fa-location-dot"></i> Canada</li>
-              <li class="list-group-item"><i class="fa-solid fa-at"></i> <a href="mailto:caddycarine@yahoo.co.uk">[email&#160;protected]</a></li>
+              <li class="list-group-item"><i class="fa-solid fa-at"></i> <a href="mailto:caddycarine@yahoo.co.uk">caddycarine@yahoo.co.uk</a></li>
             </ul>
             <div class="card-body text-light">
               <a class="card-link" href="https://www.linkedin.com/in/czemtsop" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
@@ -95,27 +96,27 @@
                 <div class="carousel-item active">
                   <div class="hero-image" style="background-image: url('images/header1.jpg');">
                     <div class="carousel-caption">
-                      <h5 class="hero-caption">Welcome! I tell data stories ...</h5>
-                      <p>. . . translating raw data to actionable intelligence.</p>
+                      <h5 class="hero-caption" data-i18n="hero.1.title">Welcome! I tell data stories ...</h5>
+                      <p data-i18n="hero.1.text">. . . translating raw data to actionable intelligence.</p>
                     </div>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <div class="hero-image" style="background-image: url('images/header2.jpg');">
                   <div class="carousel-caption">
-                    <h5 class="hero-caption">Listening to data ...</h5>
-                    <p> . . . is an art and a science.</p>
+                    <h5 class="hero-caption" data-i18n="hero.2.title">Listening to data ...</h5>
+                    <p data-i18n="hero.2.text">. . . is an art and a science.</p>
                   </div>
                 </div>
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#jumbotron" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="visually-hidden" data-i18n="carousel.previous">Previous</span>
               </button>
               <button class="carousel-control-next" type="button" data-bs-target="#jumbotron" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="visually-hidden" data-i18n="carousel.next">Next</span>
               </button>
             </div>
           </section>
@@ -123,8 +124,8 @@
           <section id="cv" class="row vh-100">
             <span class="my-4"></span>
             <div class="col-12 section-header-container">
-              <span class="col-12 section-header">My Journey</span>
-              <span class="col-12 section-header header-overlay">My Journey</span>
+              <span class="col-12 section-header" data-i18n="journey.title">My Journey</span>
+              <span class="col-12 section-header header-overlay" data-i18n="journey.title">My Journey</span>
             </div>
             <span class="my-1"></span>
             <div id="resume" class="col-md-12">
@@ -134,8 +135,8 @@
           <section id="skills" class="row">
             <span class="my-4"></span>
             <div class="col-12 section-header-container">
-              <span class="col-12 section-header">Tech & Skills</span>
-              <span class="col-12 section-header header-overlay">Tech & Skills</span>
+              <span class="col-12 section-header" data-i18n="skills.title">Tech & Skills</span>
+              <span class="col-12 section-header header-overlay" data-i18n="skills.title">Tech & Skills</span>
             </div>
             <span class="my-1"></span>
             <div class="col-md-12">
@@ -166,7 +167,7 @@
                 </div>
                 <div class="col-md-4 col-lg-3 mb-2">
                   <div class="card">
-                    <h4 class="card-header">Statistics</h4>
+                    <h4 class="card-header" data-i18n="skills.statistics">Statistics</h4>
                     <div class="card-body">
                       <h1 class="card-title"><i class="fa-solid fa-chart-line"></i></h1>
                     </div>
@@ -211,13 +212,13 @@
           <section id="projects" class="row vh-100">
             <span class="my-3"></span>
             <div class="col-12 section-header-container">
-              <span class="col-12 section-header">Projects</span>
-              <span class="col-12 section-header header-overlay">Projects</span>
+              <span class="col-12 section-header" data-i18n="projects.title">Projects</span>
+              <span class="col-12 section-header header-overlay" data-i18n="projects.title">Projects</span>
             </div>
               <div class="row">
                 <div class="col-sm-12 text-center">
                   <ul id="filters" class="btn-group btn-group-lg filter-button-group" role="group" aria-label="Filter buttons">
-                    <li><a href="#" data-filter="*" class="active">All</a></li>
+                    <li><a href="#" data-filter="*" class="active" data-i18n="filter.all">All</a></li>
                     <li><a href="#"  data-filter=".sql">SQL</a></li>
                     <!-- li><a href="#"  data-filter=".excel">Excel</a></li -->
                     <li><a href="#"  data-filter=".python">Python</a></li>
@@ -229,14 +230,14 @@
                   <li class="col-md-6 col-lg-4 grid-item sql" data-filter=".sql"> <a href="https://github.com/czemtsop/serious-sql/tree/main/Marketing_Analytics" >
                     <div class="project-img"><img src="images/dvds.jpg" class="img-fluid" alt="..."></div>
                     <div class="grid-body">
-                      <h5 class="">Marketing Analytics</h5>
-                      <p>Project from Data with Danny</p>
+                      <h5 class="" data-i18n="project.marketing.title">Marketing Analytics</h5>
+                      <p data-i18n="project.marketing.caption">Project from Data with Danny</p>
                     </div>
                   </a></li>
                   <li class="col-md-6 col-lg-4 grid-item sql" data-filter=".sql"><a href="https://github.com/czemtsop/serious-sql/tree/main/People_Analytics">
                     <div class="project-img"><img src="images/hr-analytics.jpg" class="img-fluid" alt="..."></div>
                     <div class="grid-body">
-                      <h5 class="">People Analytics</h5>
+                      <h5 class="" data-i18n="project.people.title">People Analytics</h5>
                     </div>
                   </a></li>
                   <!-- For future use
@@ -262,7 +263,7 @@
                   <li class="col-md-6 col-lg-4 grid-item python" data-filter=".python"> <a href="https://github.com/czemtsop/data-jobs">
                     <div class="project-img"><img src="images/analytics.jpg" class="img-fluid" alt="..."></div>
                     <div class="grid-body">
-                      <h5 class="card-title">Data jobs</h5>
+                      <h5 class="card-title" data-i18n="project.jobs.title">Data jobs</h5>
                     </div>
                   </a></li>
                 </ul>
@@ -280,6 +281,7 @@
   <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
   <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+  <script src="js/i18n.js"></script>
   <script src="js/script.js"></script>
 
 </body>
