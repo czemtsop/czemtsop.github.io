@@ -1,6 +1,40 @@
 [
   {
     "type": "project",
+    "titleshort": "Cooperative System",
+    "titleshort_fr": "Système coopératif",
+    "title": "Cooperative Financial Management System",
+    "title_fr": "Système de gestion financière pour coopérative",
+    "institution": "Personal (private repository)",
+    "institution_fr": "Projet personnel (dépôt privé)",
+    "logo": "analytics.png",
+    "site": "https://github.com/czemtsop",
+    "location": "Saskatoon, Canada",
+    "start": "July 2025",
+    "end": "Present",
+    "skills": [
+      "Python",
+      "Django",
+      "Double-entry accounting"
+    ],
+    "skills_fr": [
+      "Python",
+      "Django",
+      "Comptabilité en partie double"
+    ],
+    "achievements": [
+      "Designed and built a financial management system for a savings and credit cooperative, with a double-entry accounting core and a hierarchical chart of accounts.",
+      "Automated monthly interest and penalty calculations using time-weighted average balances, through an auditable six-step batch process.",
+      "Keep the books of a 20-member cooperative: cumulative minimum deposits, late penalties and pro-rata dividend allocation."
+    ],
+    "achievements_fr": [
+      "Conception et développement d'un système de gestion financière pour une coopérative d'épargne et de crédit, reposant sur une comptabilité en partie double et un plan comptable hiérarchique.",
+      "Automatisation du calcul mensuel des intérêts et des pénalités à partir des soldes moyens pondérés dans le temps, au moyen d'un traitement par lots vérifiable en six étapes.",
+      "Tenue de la comptabilité d'une coopérative de 20 membres : dépôts minimums cumulatifs, pénalités de retard et répartition des dividendes au prorata."
+    ]
+  },
+  {
+    "type": "project",
     "titleshort": "Job market Analytics",
     "titleshort_fr": "Marché de l'emploi",
     "title": "Data Job Market Analysis",
