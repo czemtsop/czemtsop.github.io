@@ -1,171 +1,467 @@
 [
   {
     "type": "project",
+    "titleshort": "Cooperative System",
+    "titleshort_fr": "Système coopératif",
+    "title": "Cooperative Financial Management System",
+    "title_fr": "Système de gestion financière pour coopérative",
+    "institution": "Personal (private repository)",
+    "institution_fr": "Projet personnel (dépôt privé)",
+    "logo": "analytics.png",
+    "site": "https://github.com/czemtsop",
+    "location": "Saskatoon, Canada",
+    "start": "July 2025",
+    "end": "Present",
+    "skills": [
+      "Python",
+      "Django",
+      "Double-entry accounting"
+    ],
+    "skills_fr": [
+      "Python",
+      "Django",
+      "Comptabilité en partie double"
+    ],
+    "achievements": [
+      "Designed and built a financial management system for a savings and credit cooperative, with a double-entry accounting core and a hierarchical chart of accounts.",
+      "Automated monthly interest and penalty calculations using time-weighted average balances, through an auditable six-step batch process.",
+      "Keep the books of a 20-member cooperative: cumulative minimum deposits, late penalties and pro-rata dividend allocation."
+    ],
+    "achievements_fr": [
+      "Conception et développement d'un système de gestion financière pour une coopérative d'épargne et de crédit, reposant sur une comptabilité en partie double et un plan comptable hiérarchique.",
+      "Automatisation du calcul mensuel des intérêts et des pénalités à partir des soldes moyens pondérés dans le temps, au moyen d'un traitement par lots vérifiable en six étapes.",
+      "Tenue de la comptabilité d'une coopérative de 20 membres : dépôts minimums cumulatifs, pénalités de retard et répartition des dividendes au prorata."
+    ]
+  },
+  {
+    "type": "project",
     "titleshort": "Job market Analytics",
-    "title": "Data Career Job Market Analysis Engine",
+    "titleshort_fr": "Marché de l'emploi",
+    "title": "Data Job Market Analysis",
+    "title_fr": "Analyse du marché de l'emploi en données",
     "institution": "Personal",
+    "institution_fr": "Projet personnel",
     "logo": "analytics.png",
     "site": "https://github.com/czemtsop/data-jobs",
     "location": "Saskatoon, Canada",
     "start": "June 2025",
     "end": "August 2025",
-    "skills": ["Python", "data harvesting", "Data cleaning", "Data visualisation"],
+    "skills": [
+      "Python",
+      "data harvesting",
+      "Data cleaning",
+      "Data visualisation"
+    ],
+    "skills_fr": [
+      "Python",
+      "Collecte de données",
+      "Nettoyage de données",
+      "Visualisation de données"
+    ],
     "achievements": [
-      "Identify regional demand for data jobs, guiding job seekers in their relocation decisions",
-      "Benchmark salaries across industries and experience levels, to facilitate budgeting and strategic planning."
+      "Built an end-to-end pipeline that scrapes data-job postings from online job boards, cleans them into an analysis-ready dataset and produces a job-market dashboard.",
+      "Benchmarked salaries and skill demand across analyst, scientist and engineer roles and experience levels, with outlier handling and keyword extraction."
+    ],
+    "achievements_fr": [
+      "Création d'une chaîne de traitement complète qui extrait les offres d'emploi en données de sites d'emploi en ligne, les nettoie pour l'analyse et produit un tableau de bord du marché de l'emploi.",
+      "Comparaison des salaires et de la demande de compétences entre les postes d'analyste, de scientifique et d'ingénieur de données et selon le niveau d'expérience, avec traitement des valeurs aberrantes et extraction de mots-clés."
     ]
   },
   {
     "type": "project",
     "titleshort": "HR",
-    "title": "People Analytics Case Study",
+    "titleshort_fr": "RH",
+    "title": "People Analytics",
+    "title_fr": "Analytique RH",
     "institution": "Personal",
+    "institution_fr": "Projet personnel",
     "logo": "analytics.png",
     "site": "https://github.com/czemtsop/serious-sql/tree/main/People_Analytics",
     "location": "Saskatoon, Canada",
     "start": "May 2025",
     "end": "June 2025",
-    "skills": ["Data Exploration", "Data visualisation", "SQL", "Communication"],
-    "achievements": ["Identify patterns and predictors of employee turnover to improve retention strategies"]
+    "skills": [
+      "Data Exploration",
+      "Data visualisation",
+      "SQL",
+      "Communication"
+    ],
+    "skills_fr": [
+      "Exploration de données",
+      "Visualisation de données",
+      "SQL",
+      "Communication"
+    ],
+    "achievements": [
+      "Prepared the datasets behind an HR dashboard and employee deep-dive view: headcount, tenure, gender ratios, salary spread and pay-rise history at company, department and title level."
+    ],
+    "achievements_fr": [
+      "Préparation des jeux de données alimentant un tableau de bord RH et une vue détaillée par employé : effectifs, ancienneté, ratios hommes-femmes, dispersion des salaires et historique des augmentations, par entreprise, service et poste."
+    ]
   },
   {
     "type": "project",
     "titleshort": "Marketing",
-    "title": "Marketing Analytics Case Study",
+    "titleshort_fr": "Marketing",
+    "title": "Marketing Analytics",
+    "title_fr": "Analytique marketing",
     "institution": "Personal",
+    "institution_fr": "Projet personnel",
     "logo": "analytics.png",
     "site": "https://github.com/czemtsop/serious-sql/tree/main/Marketing_Analytics",
     "location": "Saskatoon, Canada",
     "start": "March 2025",
     "end": "April 2025",
-    "skills": ["Data Exploration", "Critical thinking", "Communication"],
-    "achievements": ["Improved understanding of customer behaviour to optimize ROI on campaign"]
+    "skills": [
+      "Data Exploration",
+      "Critical thinking",
+      "Communication"
+    ],
+    "skills_fr": [
+      "Exploration de données",
+      "Pensée critique",
+      "Communication"
+    ],
+    "achievements": [
+      "Wrote multi-step SQL (window functions, percentiles, ranking with tie-breaks) generating personalized viewing insights and film recommendations for every customer in a rental company's first email campaign."
+    ],
+    "achievements_fr": [
+      "Rédaction de requêtes SQL en plusieurs étapes (fonctions de fenêtrage, percentiles, classements avec départage) générant des statistiques de visionnement et des recommandations de films personnalisées pour chaque client, dans le cadre de la première campagne courriel d'une entreprise de location."
+    ]
+  },
+  {
+    "type": "work",
+    "titleshort": "Customer Service Representative",
+    "titleshort_fr": "Service à la clientèle",
+    "title": "Customer Service Representative",
+    "title_fr": "Représentante du service à la clientèle",
+    "institution": "Foundever Teleservices Canada",
+    "logo": "foundever.png",
+    "site": "https://foundever.com",
+    "location": "Toronto, Canada",
+    "start": "November 2024",
+    "end": "Present",
+    "skills": [
+      "Salesforce",
+      "Customer Support",
+      "Software Troubleshooting"
+    ],
+    "skills_fr": [
+      "Salesforce",
+      "Soutien à la clientèle",
+      "Dépannage logiciel"
+    ],
+    "achievements": [
+      "Resolve customers' software issues promptly, supporting customer retention.",
+      "Maintain accurate customer records and track support metrics in Salesforce."
+    ],
+    "achievements_fr": [
+      "Résolution rapide des problèmes logiciels des clients, contribuant à leur fidélisation.",
+      "Tenue de dossiers clients exacts et suivi des indicateurs de soutien dans Salesforce."
+    ]
   },
   {
     "type": "certification",
     "titleshort": "CAP-X",
-    "title": "Certified Analytics Professional (CAP) Expert",
+    "title": "Certified Analytics Professional Expert (CAP Expert)",
     "institution": "INFORMS",
     "logo": "informs.png",
     "site": "https://www.informs.org/About-INFORMS",
     "location": "Catonsville, USA",
+    "location_fr": "Catonsville, États-Unis",
     "start": "October 2024",
     "end": "March 2025",
-    "skills": ["Analytics", "Critical thinking", "Statistics"],
-    "achievements": ["The CAP certification is a trusted, independent verification of the critical technical expertise and related soft skills possessed by accomplished analytics and data science professionals."]
+    "skills": [
+      "Analytics",
+      "Critical thinking",
+      "Statistics"
+    ],
+    "skills_fr": [
+      "Analytique",
+      "Pensée critique",
+      "Statistique"
+    ],
+    "achievements": [
+      "The CAP certification is a trusted, independent verification of the critical technical expertise and related soft skills possessed by accomplished analytics and data science professionals."
+    ],
+    "achievements_fr": [
+      "La certification CAP est une validation indépendante et reconnue de l'expertise technique essentielle et des compétences interpersonnelles des professionnels chevronnés de l'analytique et de la science des données."
+    ]
   },
   {
     "type": "work",
-    "titleshort": "BI Engineer",
-    "title": "Business Intelligence Engineer",
-    "institution": "Kuelap Inc",
+    "titleshort": "BI Analyst",
+    "titleshort_fr": "Analyste BI",
+    "title": "Business Intelligence Analyst",
+    "title_fr": "Analyste en intelligence d'affaires",
+    "institution": "Kuelap Inc.",
     "logo": "kuelap.png",
     "site": "https://www.kuelap.id/",
     "location": "Seattle, USA",
+    "location_fr": "Seattle, États-Unis",
     "start": "September 2022",
     "end": "September 2024",
-    "skills": ["Python", "Data Warehousing", "BI Tools", "OLAP","Metabase BI", "Yellowfin BI", "Financial Reporting"],
+    "skills": [
+      "Python",
+      "Data Warehousing",
+      "BI Tools",
+      "OLAP",
+      "Metabase BI",
+      "Yellowfin BI",
+      "Financial Reporting"
+    ],
+    "skills_fr": [
+      "Python",
+      "Entreposage de données",
+      "Outils BI",
+      "OLAP",
+      "Metabase BI",
+      "Yellowfin BI",
+      "Rapports financiers"
+    ],
     "achievements": [
-      "Reduced customer complaints by 90% within a month through insights from data warehouse auditing",
-      "Achieved 100% customer retention through efficient database design for transaction visibility",
-      "Cut report-building time in half by creating the organization's first data dictionary",
-      "Saved over 10 hours of manual work per month through Python automation",
-      "Accelerated report and dashboard rendering by 75% through SQL query optimization",
-      "Achieved 100% customer retention through compliance-focused financial reporting"
+      "Led the cross-team migration of critical BI tools from Yellowfin BI to Jaspersoft, saving over $100K in licence costs while maintaining report quality.",
+      "Optimized complex queries to cut computational costs by 75%, reducing report rendering from 10 to 2.5 seconds.",
+      "Audited the data warehouse and corrected data accuracy issues, reducing customer complaints by 90% within a month.",
+      "Built scalable data pipelines and automated report generation and delivery with Python, saving over 120 hours a year.",
+      "Delivered customized reports and dashboards giving microfinance clients 100% transaction visibility, supporting 50% customer growth within a year.",
+      "Built regulatory financial reports in Metabase that kept clients compliant, contributing to 100% customer retention.",
+      "Redesigned data collection and reporting systems while running several projects in parallel, raising software development efficiency by 50%."
+    ],
+    "achievements_fr": [
+      "Direction de la migration d'outils BI essentiels de Yellowfin BI à Jaspersoft avec plusieurs équipes, générant plus de 100 000 $ d'économies en frais de licence sans perte de qualité des rapports.",
+      "Optimisation de requêtes complexes réduisant de 75 % les coûts de calcul et le temps d'affichage des rapports de 10 à 2,5 secondes.",
+      "Audit de l'entrepôt de données et correction des problèmes d'exactitude, réduisant de 90 % les plaintes clients en un mois.",
+      "Mise en place de pipelines de données évolutifs et automatisation de la production et de la diffusion des rapports avec Python, économisant plus de 120 heures par année.",
+      "Conception de rapports et de tableaux de bord personnalisés offrant aux institutions de microfinance une visibilité complète sur leurs transactions, contribuant à une croissance de 50 % de la clientèle en un an.",
+      "Création de rapports financiers réglementaires dans Metabase assurant la conformité des clients et contribuant à un taux de fidélisation de 100 %.",
+      "Refonte des systèmes de collecte de données et de production de rapports en menant plusieurs projets en parallèle, augmentant de 50 % l'efficacité du développement logiciel."
     ]
   },
   {
     "type": "work",
     "titleshort": "Service Delivery Specialist",
+    "titleshort_fr": "Spécialiste de la livraison de services",
     "title": "Service Delivery Specialist",
-    "institution": "Kuelap Africa SASU",
+    "title_fr": "Spécialiste de la livraison de services",
+    "institution": "Kuelap Inc.",
     "logo": "kuelap.png",
     "site": "https://www.kuelap.id/",
     "location": "Yaoundé, Cameroon",
+    "location_fr": "Yaoundé, Cameroun",
     "start": "October 2021",
     "end": "August 2022",
-    "skills": ["Python", "Data Cleaning", "Data Migration", "Client Support"],
+    "skills": [
+      "Python",
+      "Data Cleaning",
+      "Data Migration",
+      "Client Support"
+    ],
+    "skills_fr": [
+      "Python",
+      "Nettoyage de données",
+      "Migration de données",
+      "Soutien à la clientèle"
+    ],
     "achievements": [
-      "Cleaned and migrated data for ten microfinance institutions using Python and spreadsheets",
-      "Streamlined deployment and customer onboarding processes by 30% by addressing data integrity gaps."
+      "Cleaned and migrated 2 GB of data for ten microfinance institutions with Python and spreadsheets, improving operational transparency and client confidence.",
+      "Cut deployment times by 30% by identifying and fixing data integrity gaps ahead of client launches.",
+      "Achieved 95% client satisfaction through post-go-live support and onboarding."
+    ],
+    "achievements_fr": [
+      "Nettoyage et migration de 2 Go de données de dix institutions de microfinance avec Python et des tableurs, améliorant la transparence opérationnelle et la confiance des clients.",
+      "Réduction de 30 % des délais de déploiement par la détection et la correction de lacunes d'intégrité des données avant le lancement des clients.",
+      "Taux de satisfaction client de 95 % grâce au soutien après la mise en production et à l'intégration des clients."
     ]
   },
   {
     "type": "work",
-    "titleshort": "Software Analyst",
-    "title": "Software Analyst",
+    "titleshort": "Software Engineer",
+    "titleshort_fr": "Ingénieure logiciel",
+    "title": "Software Engineer",
+    "title_fr": "Ingénieure logiciel",
     "institution": "NASLA Cameroon",
     "logo": "nasla.jpeg",
     "site": "https://nasla.cm",
     "location": "Buea, Cameroon",
+    "location_fr": "Buea, Cameroun",
     "start": "March 2021",
     "end": "August 2021",
-    "skills": ["Web Development", "E-learning Platforms", "IT Consulting"],
-    "achievements": ["Designed and deployed NASLA's bilingual website and e-learning platform"]
+    "skills": [
+      "Web Development",
+      "E-learning Platforms",
+      "IT Consulting"
+    ],
+    "skills_fr": [
+      "Développement Web",
+      "Plateformes d'apprentissage en ligne",
+      "Conseil en TI"
+    ],
+    "achievements": [
+      "Gathered and documented user requirements for 3 major systems serving over 200 users.",
+      "Raised staff efficiency by 20% across 5 departments by introducing digital processes.",
+      "Reached 470 students within 3 months by launching a bilingual website and e-learning platform."
+    ],
+    "achievements_fr": [
+      "Collecte et documentation des besoins des utilisateurs pour 3 systèmes majeurs desservant plus de 200 utilisateurs.",
+      "Hausse de 20 % de l'efficacité du personnel dans 5 services grâce à l'introduction de processus numériques.",
+      "Rejoint 470 étudiants en 3 mois grâce au lancement d'un site Web bilingue et d'une plateforme d'apprentissage en ligne."
+    ]
   },
   {
     "type": "school",
     "titleshort": "MSc Operations Research & Applied Statistics",
+    "titleshort_fr": "MSc Recherche opérationnelle et statistique appliquée",
     "title": "MSc Operations Research, Applied Statistics and Financial Risk Analysis",
+    "title_fr": "MSc en recherche opérationnelle, statistique appliquée et analyse des risques financiers",
     "institution": "Cardiff University",
     "logo": "cardiff.jpg",
     "site": "https://www.cardiff.ac.uk/study/postgraduate/taught/courses/course/operational-research-and-applied-statistics-msc",
     "location": "Cardiff, Wales",
+    "location_fr": "Cardiff, pays de Galles",
     "start": "September 2019",
     "end": "March 2021",
-    "skills": ["R", "SAS", "Python", "Simul8"],
-    "achievements": ["Used Simul8® to simulate and analyse a bank’s queuing system and make recommendations for optimisation."]
+    "skills": [
+      "R",
+      "SAS",
+      "Python",
+      "Simul8"
+    ],
+    "achievements": [
+      "Dissertation: refactored and implemented iterated prisoner's dilemma strategies in Axelrod, an open-source Python game theory library.",
+      "Statistical analysis, hypothesis testing and reporting in R, Python and SAS; queue simulation (Simul8) and supply chain optimization."
+    ],
+    "achievements_fr": [
+      "Mémoire : refonte et implémentation de stratégies du dilemme du prisonnier itéré dans Axelrod, une bibliothèque Python libre de théorie des jeux.",
+      "Analyse statistique, tests d'hypothèses et rapports avec R, Python et SAS ; simulation de files d'attente (Simul8) et optimisation de chaînes d'approvisionnement."
+    ]
   },
   {
     "type": "work",
-    "titleshort": "Software Product Manager",
+    "titleshort": "Digital Product Analyst",
+    "titleshort_fr": "Analyste produits numériques",
     "title": "Digital Product Management Analyst",
-    "institution": "Indra Sistemas",
+    "title_fr": "Analyste en gestion de produits numériques",
+    "institution": "Indra Company",
     "logo": "indra.jpg",
     "site": "https://www.indracompany.com/",
-    "location": "Douala, Cameroon",
+    "location": "Nairobi, Kenya",
+    "location_fr": "Nairobi, Kenya",
     "start": "January 2017",
     "end": "August 2019",
-    "skills": ["SLA Management", "Business Process Analysis", "Software Requirement gathering"],
-    "achievements": ["Managed customer management system supporting over 1 million customers"]
+    "skills": [
+      "SLA Management",
+      "Business Process Analysis",
+      "Software Requirement gathering"
+    ],
+    "skills_fr": [
+      "Gestion des ententes de niveau de service",
+      "Analyse des processus d'affaires",
+      "Collecte des exigences logicielles"
+    ],
+    "achievements": [
+      "Maintained 100% SLA compliance with zero escalations managing the technical relationship with Eneo Cameroon.",
+      "Reduced downtime by 30% on a customer management platform serving over 1 million electricity customers.",
+      "Analysed and modelled client business processes into requirements, and coordinated UAT, QA, integration and system testing."
+    ],
+    "achievements_fr": [
+      "Respect à 100 % des ententes de niveau de service, sans aucune escalade, dans la gestion de la relation technique avec Eneo Cameroon.",
+      "Réduction de 30 % des temps d'arrêt d'une plateforme de gestion de la clientèle desservant plus d'un million de clients d'électricité.",
+      "Analyse et modélisation des processus d'affaires du client pour en tirer les exigences, et coordination des tests d'acceptation, d'assurance qualité, d'intégration et de système."
+    ]
   },
   {
     "type": "work",
-    "titleshort": "Software Solutions Architect",
-    "title": "Digital Solutions Architect",
+    "titleshort": "Digital Solution Architect",
+    "titleshort_fr": "Architecte de solutions numériques",
+    "title": "Digital Solution Architect",
+    "title_fr": "Architecte de solutions numériques",
     "institution": "Eneo Cameroon",
     "logo": "eneo.png",
     "site": "https://eneocameroon.cm",
     "location": "Douala, Cameroon",
+    "location_fr": "Douala, Cameroun",
     "start": "June 2015",
     "end": "December 2016",
-    "skills": ["Web Development", "SharePoint", "PowerBI", "Process Automation"],
-    "achievements": ["Built web app for allocating IT equipment to employees"]
+    "skills": [
+      "Web Development",
+      "SharePoint",
+      "PowerBI",
+      "Process Automation"
+    ],
+    "skills_fr": [
+      "Développement Web",
+      "SharePoint",
+      "Power BI",
+      "Automatisation des processus"
+    ],
+    "achievements": [
+      "Cut decision-making time by 25% by running 15 SharePoint surveys and visualizing results in Power BI.",
+      "Improved asset tracking efficiency by 50% with a web app covering $435K of IT assets.",
+      "Saved over $17K and 15 hours per employee a year by digitizing request forms with InfoPath and SharePoint."
+    ],
+    "achievements_fr": [
+      "Réduction de 25 % du temps de prise de décision grâce à 15 sondages SharePoint dont les résultats ont été visualisés dans Power BI.",
+      "Amélioration de 50 % de l'efficacité du suivi des actifs grâce à une application Web couvrant 435 000 $ d'actifs informatiques.",
+      "Économies de plus de 17 000 $ et de 15 heures par employé par année grâce à la numérisation des formulaires de demande avec InfoPath et SharePoint."
+    ]
   },
   {
     "type": "work",
     "titleshort": "Digital Banking Support Specialist",
-    "title": "Electronic Banking Support Specialist",
+    "titleshort_fr": "Spécialiste du soutien bancaire numérique",
+    "title": "Digital Banking Support Specialist",
+    "title_fr": "Spécialiste du soutien aux services bancaires numériques",
     "institution": "Citibank Cameroon",
     "logo": "citi.jpg",
     "site": "https://www.citigroup.com/global/about-us/global-presence/cameroon",
     "location": "Douala, Cameroon",
+    "location_fr": "Douala, Cameroun",
     "start": "October 2014",
     "end": "January 2015",
-    "skills": ["Customer Support", "VBA", "Excel"],
-    "achievements": ["Automated daily Excel reports using VBA"]
+    "skills": [
+      "Customer Support",
+      "VBA",
+      "Excel"
+    ],
+    "skills_fr": [
+      "Soutien à la clientèle",
+      "VBA",
+      "Excel"
+    ],
+    "achievements": [
+      "Automated Excel report production with VBA, saving 2 hours a day and reducing reporting errors by 30%.",
+      "Achieved 90% client satisfaction delivering online banking training and support."
+    ],
+    "achievements_fr": [
+      "Automatisation de la production de rapports Excel avec VBA, économisant 2 heures par jour et réduisant de 30 % les erreurs.",
+      "Taux de satisfaction client de 90 % dans la formation et le soutien liés aux services bancaires en ligne."
+    ]
   },
   {
     "type": "school",
     "titleshort": "BEng Software Engineering",
-    "title": "BEng Computer (Software) Engineering",
+    "titleshort_fr": "Baccalauréat en génie logiciel",
+    "title": "BEng (Hons) Computer (Software) Engineering",
+    "title_fr": "Baccalauréat en génie informatique (logiciel), avec distinction",
     "institution": "University of Buea",
     "logo": "ub.png",
     "site": "https://www.ubuea.cm",
     "location": "Buea, Cameroon",
+    "location_fr": "Buea, Cameroun",
     "start": "October 2010",
     "end": "December 2014",
-    "skills": ["HTML5", "CSS3", "php", "Shell Scripting"],
-    "achievements": ["Built web app for interactive multiple choice question exams."]
+    "skills": [
+      "HTML5",
+      "CSS3",
+      "php",
+      "Shell Scripting"
+    ],
+    "achievements": [
+      "Built web app for interactive multiple choice question exams."
+    ],
+    "achievements_fr": [
+      "Création d'une application Web d'examens interactifs à choix multiples."
+    ]
   }
 ]
